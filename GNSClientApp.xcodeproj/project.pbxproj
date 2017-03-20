@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224B932F1E78FFF500140330 /* Cleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 224B932E1E78FFF500140330 /* Cleaner.m */; };
+		228A8BDE1E7B885D003E2809 /* gns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228A8BDD1E7B885D003E2809 /* gns.framework */; };
 		22A957B61E4A7D5400833BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A957B51E4A7D5400833BE3 /* main.m */; };
 		22A957B91E4A7D5400833BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A957B81E4A7D5400833BE3 /* AppDelegate.m */; };
 		22A957BC1E4A7D5400833BE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A957BB1E4A7D5400833BE3 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224B932D1E78FFF500140330 /* Cleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleaner.h; sourceTree = "<group>"; };
+		224B932E1E78FFF500140330 /* Cleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cleaner.m; sourceTree = "<group>"; };
+		228A8BDD1E7B885D003E2809 /* gns.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gns.framework; sourceTree = "<group>"; };
 		22A957B11E4A7D5400833BE3 /* GNSClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNSClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A957B51E4A7D5400833BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22A957B71E4A7D5400833BE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +38,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228A8BDE1E7B885D003E2809 /* gns.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224B932B1E78FFF500140330 /* sun */ = {
+			isa = PBXGroup;
+			children = (
+				224B932C1E78FFF500140330 /* misc */,
+			);
+			path = sun;
+			sourceTree = "<group>";
+		};
+		224B932C1E78FFF500140330 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				224B932D1E78FFF500140330 /* Cleaner.h */,
+				224B932E1E78FFF500140330 /* Cleaner.m */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
 		22A957A81E4A7D5400833BE3 = {
 			isa = PBXGroup;
 			children = (
 				22A957B31E4A7D5400833BE3 /* GNSClientApp */,
 				22A957B21E4A7D5400833BE3 /* Products */,
+				22EA4ABD1E4A867300AD7901 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,7 @@
 		22A957B31E4A7D5400833BE3 /* GNSClientApp */ = {
 			isa = PBXGroup;
 			children = (
+				224B932B1E78FFF500140330 /* sun */,
 				22A957B71E4A7D5400833BE3 /* AppDelegate.h */,
 				22A957B81E4A7D5400833BE3 /* AppDelegate.m */,
 				22A957BA1E4A7D5400833BE3 /* ViewController.h */,
@@ -77,6 +102,14 @@
 				22A957B51E4A7D5400833BE3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22EA4ABD1E4A867300AD7901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				228A8BDD1E7B885D003E2809 /* gns.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A957BC1E4A7D5400833BE3 /* ViewController.m in Sources */,
+				224B932F1E78FFF500140330 /* Cleaner.m in Sources */,
 				22A957B91E4A7D5400833BE3 /* AppDelegate.m in Sources */,
 				22A957B61E4A7D5400833BE3 /* main.m in Sources */,
 			);
@@ -181,7 +215,7 @@
 		22A957C61E4A7D5400833BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -204,6 +238,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -218,18 +253,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
 		22A957C71E4A7D5400833BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -252,6 +289,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -260,6 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -272,10 +311,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${J2OBJC_HOME}/frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GNSClientApp",
+				);
+				HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				INFOPLIST_FILE = GNSClientApp/Info.plist;
+				J2OBJC_HOME = /Users/kanantharamu/Downloads/j2objc/dist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ljre_zip",
+					"-ljre_emul",
+					"-lz",
+					"-ljunit",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp /Users/kanantharamu/xcodep/test/GNSClientApp/gns.framework/Headers";
 			};
 			name = Debug;
 		};
@@ -283,10 +341,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${J2OBJC_HOME}/frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GNSClientApp",
+				);
+				HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				INFOPLIST_FILE = GNSClientApp/Info.plist;
+				J2OBJC_HOME = /Users/kanantharamu/Downloads/j2objc/dist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				OTHER_LDFLAGS = (
+					"-ljre_zip",
+					"-ljre_emul",
+					"-lz",
+					"-ljunit",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp /Users/kanantharamu/xcodep/test/GNSClientApp/gns.framework/Headers";
 			};
 			name = Release;
 		};
@@ -309,6 +385,7 @@
 				22A957CA1E4A7D5400833BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

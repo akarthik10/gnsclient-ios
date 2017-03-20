@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp/sun/misc/Cleaner.m \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/J2ObjC_source.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/IOSClass.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/IOSMetadata.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/J2ObjC_types.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/J2ObjC_common.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/io/Serializable.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/J2ObjC_header.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/IOSObjectArray.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/IOSArray.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/NSObject+JavaObject.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/JavaObject.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/reflect/AnnotatedElement.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/reflect/GenericDeclaration.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/reflect/Type.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/IOSPrimitiveArray.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/NSCopying+JavaCloneable.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/NSException+JavaThrowable.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/NSNumber+JavaNumber.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/NSString+JavaString.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/CharSequence.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/Comparable.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/jni.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/Error.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/Runnable.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/System.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/Void.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/ref/PhantomReference.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/ref/Reference.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/lang/ref/ReferenceQueue.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/security/AccessController.h \
+  /Users/kanantharamu/Downloads/j2objc/dist/include/java/security/PrivilegedAction.h \
+  /Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp/sun/misc/Cleaner.h
