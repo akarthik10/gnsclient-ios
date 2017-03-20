@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: GNSClientApp.xcodeproj
+xcode_scheme: GNSClientApp
+xcode_sdk: iphonesimulator10.1
