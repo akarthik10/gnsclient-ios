@@ -1,0 +1,3 @@
+[submodule "GNS"]
+	path = GNS
+	url = https://github.com/MobilityFirst/GNS
