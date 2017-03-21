@@ -15,7 +15,18 @@
 		22A957BF1E4A7D5400833BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A957BD1E4A7D5400833BE3 /* Main.storyboard */; };
 		22A957C11E4A7D5400833BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A957C01E4A7D5400833BE3 /* Assets.xcassets */; };
 		22A957C41E4A7D5400833BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A957C21E4A7D5400833BE3 /* LaunchScreen.storyboard */; };
+		22BD3ED81E80FD9A00F077D2 /* GNSClientAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BD3ED71E80FD9A00F077D2 /* GNSClientAppTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22BD3EDA1E80FD9A00F077D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A957A91E4A7D5400833BE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A957B01E4A7D5400833BE3;
+			remoteInfo = GNSClientApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		224B932D1E78FFF500140330 /* Cleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleaner.h; sourceTree = "<group>"; };
@@ -31,6 +42,9 @@
 		22A957C01E4A7D5400833BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A957C31E4A7D5400833BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A957C51E4A7D5400833BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BD3ED51E80FD9A00F077D2 /* GNSClientAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNSClientAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BD3ED71E80FD9A00F077D2 /* GNSClientAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNSClientAppTests.m; sourceTree = "<group>"; };
+		22BD3ED91E80FD9A00F077D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				228A8BDE1E7B885D003E2809 /* gns.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BD3ED21E80FD9A00F077D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				22A957B31E4A7D5400833BE3 /* GNSClientApp */,
+				22BD3ED61E80FD9A00F077D2 /* GNSClientAppTests */,
 				22A957B21E4A7D5400833BE3 /* Products */,
 				22EA4ABD1E4A867300AD7901 /* Frameworks */,
 			);
@@ -75,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				22A957B11E4A7D5400833BE3 /* GNSClientApp.app */,
+				22BD3ED51E80FD9A00F077D2 /* GNSClientAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +125,15 @@
 				22A957B51E4A7D5400833BE3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22BD3ED61E80FD9A00F077D2 /* GNSClientAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				22BD3ED71E80FD9A00F077D2 /* GNSClientAppTests.m */,
+				22BD3ED91E80FD9A00F077D2 /* Info.plist */,
+			);
+			path = GNSClientAppTests;
 			sourceTree = "<group>";
 		};
 		22EA4ABD1E4A867300AD7901 /* Frameworks */ = {
@@ -132,6 +164,24 @@
 			productReference = 22A957B11E4A7D5400833BE3 /* GNSClientApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22BD3ED41E80FD9A00F077D2 /* GNSClientAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BD3EDE1E80FD9A00F077D2 /* Build configuration list for PBXNativeTarget "GNSClientAppTests" */;
+			buildPhases = (
+				22BD3ED11E80FD9A00F077D2 /* Sources */,
+				22BD3ED21E80FD9A00F077D2 /* Frameworks */,
+				22BD3ED31E80FD9A00F077D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BD3EDB1E80FD9A00F077D2 /* PBXTargetDependency */,
+			);
+			name = GNSClientAppTests;
+			productName = GNSClientAppTests;
+			productReference = 22BD3ED51E80FD9A00F077D2 /* GNSClientAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +194,11 @@
 					22A957B01E4A7D5400833BE3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					22BD3ED41E80FD9A00F077D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A957B01E4A7D5400833BE3;
 					};
 				};
 			};
@@ -161,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				22A957B01E4A7D5400833BE3 /* GNSClientApp */,
+				22BD3ED41E80FD9A00F077D2 /* GNSClientAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +229,13 @@
 				22A957C41E4A7D5400833BE3 /* LaunchScreen.storyboard in Resources */,
 				22A957C11E4A7D5400833BE3 /* Assets.xcassets in Resources */,
 				22A957BF1E4A7D5400833BE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BD3ED31E80FD9A00F077D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22BD3ED11E80FD9A00F077D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BD3ED81E80FD9A00F077D2 /* GNSClientAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22BD3EDB1E80FD9A00F077D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A957B01E4A7D5400833BE3 /* GNSClientApp */;
+			targetProxy = 22BD3EDA1E80FD9A00F077D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22A957BD1E4A7D5400833BE3 /* Main.storyboard */ = {
@@ -366,6 +445,66 @@
 			};
 			name = Release;
 		};
+		22BD3EDC1E80FD9A00F077D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(J2OBJC_HOME)/frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(J2OBJC_HOME)/include",
+				);
+				INFOPLIST_FILE = GNSClientAppTests/Info.plist;
+				J2OBJC_HOME = "./j2objc-1.3.1";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(J2OBJC_HOME)/lib";
+				OTHER_LDFLAGS = (
+					"-ljre_zip",
+					"-ljre_emul",
+					"-lz",
+					"-ljunit",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNSClientApp.app/GNSClientApp";
+				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/$(PRODUCT_NAME)";
+			};
+			name = Debug;
+		};
+		22BD3EDD1E80FD9A00F077D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(J2OBJC_HOME)/frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(J2OBJC_HOME)/include",
+				);
+				INFOPLIST_FILE = GNSClientAppTests/Info.plist;
+				J2OBJC_HOME = "./j2objc-1.3.1";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(J2OBJC_HOME)/lib";
+				OTHER_LDFLAGS = (
+					"-ljre_zip",
+					"-ljre_emul",
+					"-lz",
+					"-ljunit",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNSClientApp.app/GNSClientApp";
+				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/$(PRODUCT_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +525,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		22BD3EDE1E80FD9A00F077D2 /* Build configuration list for PBXNativeTarget "GNSClientAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BD3EDC1E80FD9A00F077D2 /* Debug */,
+				22BD3EDD1E80FD9A00F077D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
