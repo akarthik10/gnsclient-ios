@@ -333,7 +333,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/**";
+				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
@@ -362,7 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/**";
+				USER_HEADER_SEARCH_PATHS = "./gns.framework/Headers $(SRCROOT)/$(PROJECT_NAME)";
 			};
 			name = Release;
 		};
