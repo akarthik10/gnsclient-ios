@@ -3,4 +3,4 @@ URL="https://github.com/google/j2objc/releases/download/1.3.1/j2objc-1.3.1.zip" 
 wget $URL
 unzip *.zip
 xcodebuild -list
-xcodebuild -configuration Debug -target GNSClientApp -scheme GNSClientApp -sdk iphonesimulator -destination platform="iOS Simulator",OS=10.2,name="iPhone 7 Plus",id="7B6F8C6B-B67A-4F64-BB70-AE1FF077ACC2" build test
+xcodebuild -configuration Debug -target GNSClientApp -scheme GNSClientApp -sdk iphonesimulator -destination platform="iOS Simulator",OS=10.2,id="7B6F8C6B-B67A-4F64-BB70-AE1FF077ACC2" build test
