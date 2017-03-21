@@ -321,7 +321,7 @@
 				);
 				HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				INFOPLIST_FILE = GNSClientApp/Info.plist;
-				J2OBJC_HOME = "./j2objc-1.3.1/dist";
+				J2OBJC_HOME = "./j2objc-1.3.1";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				ONLY_ACTIVE_ARCH = NO;
@@ -333,7 +333,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp /Users/kanantharamu/xcodep/test/GNSClientApp/gns.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = ./gns.framework/Headers;
 			};
 			name = Debug;
 		};
@@ -351,7 +351,7 @@
 				);
 				HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
 				INFOPLIST_FILE = GNSClientApp/Info.plist;
-				J2OBJC_HOME = "./j2objc-1.3.1/dist";
+				J2OBJC_HOME = "./j2objc-1.3.1";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				OTHER_LDFLAGS = (
@@ -362,7 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = UMass.GNSClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/kanantharamu/xcodep/test/GNSClientApp/GNSClientApp /Users/kanantharamu/xcodep/test/GNSClientApp/gns.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = ./gns.framework/Headers;
 			};
 			name = Release;
 		};
